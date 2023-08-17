@@ -1,0 +1,2 @@
+<input type="file" name="file-input" #fileInput (change)="onFileUpload($event)" style="display: none;"/>
+<button (click)="selectFile()">Choose File</button> <span>{{value?.name || 'No file chosen'}}</span>

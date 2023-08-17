@@ -1,0 +1,8 @@
+<h3>File-Upload</h3>
+<form [formGroup]="form">
+  <app-file-upload formControlName="file"></app-file-upload>
+</form>
+
+<br>
+<input type="file" (change)="onFileChange($event)">
+<button (click)="patch()">Patch</button>
